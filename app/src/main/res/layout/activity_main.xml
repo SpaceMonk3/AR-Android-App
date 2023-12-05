@@ -7,49 +7,82 @@
     tools:context=".MainActivity">
 
     <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/arFragment"
-        android:name="com.example.project3_dtammina.ARFragment" />
+        android:name="com.example.project3_dtammina.CustomArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <TextView
+        android:id="@+id/cubesCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_alignParentEnd="true"
-        android:text="Balloons Left: 20"
-        android:id="@+id/balloonsCntTxt"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Boxes: 15"
+        android:textColor="#6750A3"
+        android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/timerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_centerHorizontal="true"
-        android:text="0:0"
-        android:textSize="32sp"
-        android:textStyle="bold"
+        android:layout_marginTop="32dp"
         android:fontFamily="serif-monospace"
-        android:id="@+id/timerText"/>
+        android:text="0.0"
+        android:textColor="#03A9F4"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
     <View
-        android:layout_width="72dp"
+        android:layout_width="30dp"
         android:layout_height="4dp"
-        android:background="#7a000000"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:background="#7a000000" />
 
     <View
         android:layout_width="4dp"
-        android:layout_height="72dp"
-        android:background="#7a000000"
-        android:layout_centerInParent="true" />
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="#7a000000" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/shootButton"
+        android:layout_width="104dp"
+        android:layout_height="94dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:text="Shoot"/>
+        android:layout_marginBottom="100dp"
+        android:text="Shoot" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="23dp"
+        android:text="Restart" />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="infoClick"
+        android:text="Info!" />
 
 </RelativeLayout>

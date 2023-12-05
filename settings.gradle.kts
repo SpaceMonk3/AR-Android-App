@@ -15,4 +15,13 @@ dependencyResolutionManagement {
 
 rootProject.name = "Project3-dtammina"
 include(":app")
+
+
+//include(":sceneform")
+
+//project(":sceneform").projectDir = File("sceneformsrc/sceneform")
+
+//include(":sceneformux")
+
+//project(":sceneformux").projectDir = File("sceneformux/ux")
  
